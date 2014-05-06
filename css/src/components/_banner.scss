@@ -1,0 +1,43 @@
+.banner {
+	position: relative;
+
+	height: 150px;
+
+	background: $mainTheme;
+
+	@include transition(all 0.2s);
+}
+.cta {
+	height: 100%;
+	width: $maxWidth - 5%;
+	margin: 0 auto;
+	padding: 25px 0;
+	
+	position: relative;
+	
+	color: $white;
+	h2 {
+		font-family: $openSansB;
+		text-transform: uppercase;
+	}
+	span {
+		font-size: 1.8em;
+	}
+	img {
+		height: 105px;
+		width: 175px;
+
+	}
+}
+.cta-text {
+	position: absolute;
+	top: 15%;
+	left: 18%;
+	span {
+		margin-left: 3px;
+		
+		letter-spacing: 1px;
+		
+		float: left;
+	}
+}

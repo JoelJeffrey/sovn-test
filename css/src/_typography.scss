@@ -1,0 +1,72 @@
+//
+// Typography
+// ---------------------------
+
+// Links
+// ------
+a {
+    color: $linkColor;
+    text-decoration: none;
+    &:hover {
+
+        color: $linkColorHover;
+        text-decoration: none;
+    }
+}
+
+// Body text
+// ----------
+p { margin: 0 0 $baseLineHeight / 2; }
+
+
+// Emphasis & Misc
+// -----------------
+em { font-style: italic; }
+cite { font-style: normal; }
+
+
+// Headings
+// ---------
+h1, h2, h3, h4, h5, h6 {
+    margin: ($baseLineHeight / 2) 0;
+    font-weight: $headingsFontWeight;
+    font-family: $headingsFontFamily;
+    line-height: 1;
+    color: $headingsColor;
+    text-rendering: optimizelegibility; // Fix the character spacing for headings
+    
+}
+h1 { 
+    font-size: 5.8em;
+    font-family: $openSansSB;
+}
+h2 { 
+    font-size: 4.2em; 
+    font-family: $openSansSB;
+}
+h3 { 
+    font-size: 2.8em;
+    font-family: $openSansSB;
+    font-weight: $thin;
+    text-transform: uppercase;
+}
+h4 { 
+    font-size: 2.2em; 
+    font-family: $openSansL;
+    color: $white;
+    text-transform: uppercase;
+}
+h5 { 
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-family: $openSansSB;
+}
+h6 { font-size: 1.2em; }
+
+// Sup tag styling (for trademark)
+// -------------------------------
+sup {
+    vertical-align: -8px;
+    font-family: $openSansL;
+    font-weight: $thin;
+}

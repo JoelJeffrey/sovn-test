@@ -1,0 +1,45 @@
+//
+// Scaffolding
+// ---------------------------
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+// Border-box size everything!
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+// Body reset
+// -----------
+body {
+    font-size: $baseFontSize;
+    font-family: $baseFontFamily;
+    color: $textColor;
+    background-color: $bodyBackground;
+
+    padding: 0;
+    margin: 0; 
+
+    min-width: 650px;
+}
+// Changes the selection color
+// --------------------------------
+
+/* Mozilla based browsers */
+::-moz-selection {
+       background-color: $mainTheme;
+       color: $white;
+}
+
+/* Works in Safari */
+::selection {
+       background-color: $mainTheme;
+       color: $white;
+}

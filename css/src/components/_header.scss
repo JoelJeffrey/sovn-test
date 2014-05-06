@@ -1,0 +1,177 @@
+header {
+	max-height: 215px;
+	width: $maxWidth;
+	margin: 0 auto;
+
+	text-transform: uppercase;
+	li {
+		position: relative;
+		
+		display: inline-block;
+		&:before {
+			content: "";
+			
+			position: absolute;
+			
+			height: 22px;
+			width: 1px;
+			right: 0;
+			top: 0px;
+			
+			background: $lightGrey;
+		}
+	}
+	a {
+		@include transition(all 0.3s);
+	}
+}
+.nav-mobile {
+	display: none;
+}
+.header-content {
+	height: 140px;
+
+	position: relative;
+
+	border-bottom: 1px solid $lightGrey;
+	img {
+		@extend %vertical-center;
+
+		height: 75px;
+		width: 225px;
+	}
+}
+.contact {
+	height: 30px;
+	
+	position: relative;
+	float: right;
+	clear: both;
+	
+	font-size: 1.3em;
+	font-family: $openSansB;
+	ul {
+		height: 20px;
+
+		position: relative;
+		float: left;
+		top: 50%;
+		
+		margin-top:-10px;
+
+		line-height: 20px;
+	}
+	li {
+		float: left;
+
+		padding: 0 15px;
+		
+		letter-spacing: 1px;
+		&:last-child {
+			&:before {
+			display: none;
+			}
+		}
+	}
+}
+.account {
+	padding: 25px 0;
+	
+	float: right;
+	
+	display: inline-block;
+	.sign-in, .checkout {
+		font-size: 1.3em;
+		font-family: $openSansB;
+		letter-spacing: 1px;
+		
+		@include transition(all 0.2s);
+	}
+	.sign-in {
+		float: left;
+
+		padding-right: 10px;
+		border-right: 1px solid $lightGrey;
+	}
+	.checkout {
+		padding-left: 10px;
+		
+		color: $mainTheme;
+		&:hover {
+			color: $black;
+		}
+	}
+}
+nav {
+	height: 75px;
+	width: 100%;
+
+	position: relative;
+}
+.nav-mobile {
+	@extend %vertical-center;
+	li {
+		&:before {
+			content: "";
+			
+			position: absolute;
+			
+			height: 45px;
+			width: 1px;
+			right: 0;
+			top: 0px;
+			
+			background: $mainTheme;
+		}
+		&:last-child {
+			&:before {
+				display: none;
+			}
+		}
+	}
+}
+.nav-products, .nav-company {
+	@extend %vertical-center;
+	
+	font-size: 1.9em;
+	font-family: $openSansSB;
+	li {
+		position: relative;
+		padding: 0 15px;
+	}
+}
+.nav-products {
+	left: 0;
+	li {
+		&:first-child {
+			padding-left: 0;
+		}
+		&:last-child {
+			padding-right: 0;
+			&:before {
+				display: none;
+			}
+		}
+	}
+}
+.nav-company {
+	float: right;
+	right: 0;
+	li {
+		&:first-child {
+			padding-left: 0;
+		}
+		&:last-child {
+			padding-right: 0;
+			&:before {
+				display: none;
+			}
+		}
+	}
+	a {
+		color: $mainTheme;
+		&:hover {
+			color: $black;
+		}
+	}
+}

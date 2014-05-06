@@ -1,0 +1,130 @@
+footer {
+	height: 400px;
+	h4 {
+		margin: 0;
+		padding: 50px 0 30px;
+
+		color: $black;
+		font-family: $openSansSB;
+		letter-spacing: -1px;
+	}
+	.trademark {
+		position: relative;
+		bottom: 15%;
+		
+		color: $lightGrey;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.item {
+		height: 100%;
+		
+		cursor: default;
+	}
+}
+.social, .links {
+	width: $maxWidth;
+	margin: 0 auto;
+
+	@include transition(all 0.2s);
+}
+.social {
+	height: 250px;
+
+	border-bottom: 1px solid $lightGrey;
+	li {
+		height: 35px;
+		width: 35px;
+		margin: 0 5px;
+		
+		display: inline-block;
+		
+		background: $mainTheme;
+		
+		color: $white;
+		font-size: 2em;
+		line-height: 35px;
+		text-align: center;
+		
+		cursor: pointer;
+
+		@include transition(background 0.3s);
+	}
+	.fb {
+		margin-left: 0;
+		&:hover {
+			background: $fb;
+		}
+	}
+	.tw:hover {
+		background: $tw;
+	}
+	.yt:hover {
+		background: $yt;
+	}
+	.gp:hover {
+		background: $gp;
+	}
+	.pn:hover {
+		background: $pn;
+	}
+	.rss:hover {
+		background: $rss;
+	}
+	.email {
+		padding: 15px 0;
+		
+		float: left;
+		
+		font-size: 1.5em;
+		color: $grey;
+		font-family: $openSans;
+	}
+	.item {
+		width: 30%;
+		&:nth-child(2) {
+			margin: 0 0 0 3%; 
+		}
+	}
+}
+.blog-post {
+	padding-bottom: 20px;
+	margin-top: -5px;
+	span {
+		font-size: 1.2em;
+		color: $grey;
+		text-transform: uppercase;
+	}
+	a {
+		display: block;
+		padding: 0 0 5px;
+		
+		color: $mainTheme;
+		font-family: $openSansB;
+		font-size: 1.5em;
+
+		@include transition(all 0.3s);
+		&:hover {
+			color: $black;
+		}
+	}
+}
+.links {
+	padding: 45px 0;
+	height: 325px;
+	.item {
+		width: 20%;
+		img {
+			height: 55px;
+			width: 171px;
+		}
+	}
+	a {
+		color: $grey;
+		font-size: 1.4em;
+		line-height: 30px;
+		&:hover {
+			color: $mainTheme;
+		}
+	}
+}

@@ -1,0 +1,80 @@
+// variable MQ's
+// ---------------
+
+$maxWidth: 80%;
+
+// Typography MQ's
+// ----------------
+h1 {
+	font-size: 5.4em;
+}
+
+// Header MQ's
+// -------------
+header {
+	width: $maxWidth;
+	.nav-products, .nav-company {
+		font-size: 1.6em;
+	}
+}
+
+// slideshow MQ's
+// ----------------
+.slide-content p {
+	padding: 5px 0;
+}
+.cycle-pager {
+	bottom: 5%;
+	span {
+		font-size: 3.5em;
+	}
+}
+
+// Company MQ's
+// --------------
+.container-info {
+	padding: 5%  5% 0 20%;
+	.button {
+		top: 5%;
+	}
+}
+
+// Shop MQ's
+// ---------------
+.featured, .collection {
+	width: $maxWidth;
+}
+
+//Banner MQ's
+// ---------------
+.banner {
+	.cta {
+	width: $maxWidth;	
+	}
+}
+
+//Form MQ's
+// ---------
+form {
+	input {
+		width: 200px;
+	}
+}
+
+// Footer MQ's
+// --------------
+.social {
+	form {
+		float: left;
+		input {
+			width: 200px;
+			font-size: 1em; 
+		}
+	}
+}
+.social, .links {
+	width: $maxWidth;
+}
+.social .item {
+	width: 32%;
+}

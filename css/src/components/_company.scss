@@ -1,0 +1,130 @@
+.company {
+	height: 600px;
+	width: 100%;
+	
+	position: relative;
+	
+	background: $mainTheme;
+	
+	color: $white;
+
+	overflow: hidden;
+	.button {
+		width: 210px;
+
+		display: block;
+		
+		position: relative;
+		left: 0;
+		top: 10%;
+		&:hover {
+			&:before {
+				right: 12%;
+			}
+		}
+		&:before {
+			font-size: 1.2em;
+			
+			top: -1px;
+			right: 17%;
+		}
+	}
+}
+.container {
+	height: 100%;
+	width: 50%;
+
+	float: left;
+	a {
+		color: $white;
+	}
+}
+.container-info {
+	height: 100%;
+	padding: 7% 5% 0 $maxPadding;
+
+	@include transition(all 0.2s);
+	h2 {
+		line-height: 55px;
+	}
+	p {
+		width: 94%;
+		padding: 0 0 15px;
+
+		font-size: 1.8em;
+		font-family: $openSans;
+		line-height: 28px;
+	}
+}
+.brands {
+	width: 100%;
+	li {
+		display: inline-block;
+		padding: 0 1%;
+		&:first-child {
+			padding-left: 0;
+		}
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+}
+.item {
+	height: 50%;
+	width: 50%;
+
+	position: relative;
+	float: left;
+
+	cursor: pointer;
+	&:hover {
+		.overlay {
+			height: 100%;
+			
+			opacity: 1;
+			
+			@include transition(height 0.4s);
+		}
+		h3:before {
+			opacity: 1;
+		}
+	}
+	img {
+		height: 100%;
+		width: 100%;
+	}
+	h3 {
+		position: absolute;
+		left: 7%;
+		bottom: 10%;
+
+		font-family: $openSans;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		&:before {
+			content: "\203A";
+			
+			position: absolute;
+			right: -20px;
+			top: -9px;
+
+			display: block;
+			
+			font-size: 1.3em;
+			opacity: 0;
+
+			@include transition(all 0.6s);
+		}
+	}
+	.overlay {
+		height: 0;
+		width: 100%;
+
+		position: absolute;
+		
+		background: rgba(123, 162, 183, 0.9);
+		opacity: 0;
+
+		@include transition(all .4s);
+	}
+}

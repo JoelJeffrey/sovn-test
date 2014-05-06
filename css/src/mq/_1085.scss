@@ -1,0 +1,77 @@
+// variable MQ's
+// ---------------
+
+$maxWidth: 95%;
+
+// Header MQ's
+// -------------
+header {
+	width: $maxWidth;
+	.nav-products, .nav-company {
+		font-size: 1.4em;
+	}
+}
+
+// slideshow MQ's
+// ----------------
+.slide-content {
+	top: 5%;
+}
+.cycle-prev {
+	left: 3%;
+}
+.cycle-next {
+	right: 3%;
+}
+.cycle-pager {
+	bottom: 3%;
+	span {
+		font-size: 2.5em;
+	}
+}
+
+// Company MQ's
+// --------------
+.company {
+	width: $maxWidth;
+}
+
+// Shop MQ's
+// ---------------
+.featured, .collection {
+	width: $maxWidth;
+}
+
+//Banner MQ's
+// ---------------
+.banner {
+	.cta {
+	width: $maxWidth;	
+	}
+	.cta-text {
+		left: 22%;
+	}
+	.button {
+		width: 240px;
+	}
+}
+
+// Footer MQ's
+// --------------
+.social, .links {
+	width: $maxWidth;
+}
+.social {
+	.item {
+		width: 50%;
+		&:nth-child(2) {
+			display: none;
+		}
+	}
+}
+.links .item:nth-child(1) {
+	width: 15%;
+	img {
+		width: 90%;
+	}
+}

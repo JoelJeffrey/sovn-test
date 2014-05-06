@@ -1,0 +1,273 @@
+// variable MQ's
+// ---------------
+$maxWidth: 100%;
+
+// Typography MQ's
+// ----------------
+h1 { 
+    font-size: 5.8em;
+    font-family: $openSansSB;
+}
+h2 { 
+    font-size: 4.2em; 
+    font-family: $openSansSB;
+}
+h3 { 
+    font-size: 2.8em;
+    font-family: $openSansSB;
+    font-weight: $thin;
+    text-transform: uppercase;
+}
+h4 { 
+    font-size: 2.2em; 
+    font-family: $openSansL;
+    color: $white;
+    text-transform: uppercase;
+}
+h5 { 
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-family: $openSansSB;
+}
+
+// Header MQ's
+// -------------
+header {
+	height: 305px;
+	max-height: 305px;
+}
+.contact, .account {
+	display: none;
+}
+.header-content {
+	height: 220px;	
+	border-bottom: 1px solid $mainTheme; 
+	img {
+		position: relative;
+		display: block;
+		margin: 0 auto;
+		height: 128px;
+		width: 397px;	
+	}
+}
+.nav {
+	height: 85px;
+}
+.nav-products, .nav-company {
+	display: none;
+}
+.nav-mobile {
+	width: 100%;
+	display: block;
+	text-align: center;
+	li {
+		width: 20%;
+		height: 100%;
+		font-size: 3.6em;
+		color: $mainTheme;
+		text-align: center;
+
+		a {
+			color: $mainTheme;
+			&:hover {
+				color: $black;
+			}
+		}
+	}
+}
+
+// slideshow MQ's
+// ----------------
+.slideshow-wrap {
+	height: 455px;
+	width: 100%;
+}
+.cycle-slideshow {
+	display: none;
+}
+.mobile-slide {
+	height: 455px;
+	width: 100%;
+
+	position: relative;
+
+	display: block;
+
+	background: url(../../imgs/bed-slideshow.jpg) no-repeat;
+	background-size: cover;
+
+	color: $white;
+	padding: 15px;
+
+	overflow: hidden;
+	.slide-content {
+		left: 5%;
+	}
+	.button {
+		width: 185px;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+	.cta {
+		margin: 0;
+		width: 600px;
+	}
+	.cta-text {
+		width: 100%;
+	}
+}
+
+// Company MQ's
+// --------------
+.company {
+	height: 1080px;
+	width: $maxWidth;
+	.button {
+		left: 25%;
+	}
+}
+.container {
+	height: 600px;
+	&:first-child {
+		height: 600px;
+	}
+}
+.container-info p {
+	padding: 30px 0;
+}
+
+// Shop MQ's
+// ---------------
+.shop {
+	height: 1315px;
+	width: 650px; 
+	margin: 0 auto;
+}
+.collection {
+	height: 100%;
+	width: $maxWidth - 5%;
+	.item {
+		position: relative;
+		height: 385px;
+		width: 100%;
+		display: block;
+		&:nth-child(3) {
+			margin: 20px 0;
+		}
+	}
+	h3 {
+		padding-bottom: 30px;
+	}
+}
+.featured {
+	display: none;
+}
+
+
+//Banner MQ's
+// ---------------
+.banner {
+	height: 200px;
+	width: $maxWidth;
+	.cta {
+		position: relative;
+		width: $maxWidth;
+		img {
+			position: absolute;
+			left: 5%;
+			bottom: 25%;
+			
+		}
+	}
+	.cta-text {
+		left: 35%;
+	}
+	.button {
+		height: 50px;
+		width: 300px;
+		
+		position: relative;
+		display: block;
+		top: 85%;
+		left: 35%;
+	}
+}
+
+//Form MQ's
+// ---------
+
+.social {
+	li {
+		width: 55px;
+		height: 55px;
+
+		font-size: 2.7em;
+		line-height: 55px;
+	}
+	h4 {
+		font-size: 3.2em;
+	}
+	form {
+		float: left;
+		input {
+			height: 50px;
+			width: 355px;
+			
+			font-size: 1.2em; 
+		}
+		button {
+			height: 50px;
+			width: 150px;
+		}
+	}
+	.email {
+		display: none;
+	}
+}
+
+
+// Footer MQ's
+// --------------
+footer {
+	overflow: hidden;
+	position: relative;
+	height: 550px;
+	.trademark {
+		width: 300px;
+		position: absolute;
+		left: 45px;
+		bottom: 10%;
+
+		text-align: left;
+	}
+}
+.social {
+	height: 415px;
+	width: $maxWidth;
+	border: none;
+	.item {
+		border-bottom: 1px solid $lightGrey;
+		height: 50%;
+		width: $maxWidth;
+		padding: 0 45px;
+		margin: 0 auto;
+		display: block;
+	}
+}
+.links {
+	width: 200px;
+	float: right;
+	.item {
+		display: none;
+		&:nth-child(1) {
+			width: 300px;
+
+			display: block;
+			img {
+				height: 55px;
+				width: 171px;
+			}
+		}
+	}
+}
